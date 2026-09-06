@@ -40,13 +40,80 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laborum.</p>
             </section>
             <hr>
-            <hr>
             <section>
                 <h2>Nosotros</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae voluptatem quam nemo architecto, porro aliquam eum magni fugiat cupiditate, eaque veritatis facere illum, animi autem dolore nobis commodi ab perspiciatis suscipit provident veniam. Aperiam, cupiditate, sint beatae sed et possimus mollitia, veniam cumque deleniti dolore laudantium quibusdam! Quam dolores ipsa odit aperiam, enim id pariatur laboriosam fugiat. Quos porro natus, dolorem voluptate, vitae vero ut consectetur odit pariatur sequi, itaque minus mollitia velit iure aspernatur.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod reprehenderit ratione, asperiores eos, adipisci aut eveniet sed suscipit consequatur quasi magnam! Numquam, veniam? Odit enim, error maxime vero ab eligendi, dolore pariatur, illum laboriosam voluptatum suscipit nisi non esse. Quaerat dolor dolores ratione ut cupiditate earum, asperiores eos dolorum.</p>
             
             </section>
-            
+            <hr>
+            <section>
+                <h3>Contacto</h3>
+                <form action="#" method="post">
+                    <legend>Datos del Cliente</legend>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required><br><br>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <br>
+
+                    <legend>Datos del Equipo</legend>
+                    <label for="tipo_equipo">Tipo de equipo:</label>
+                    <select name="tipo_equipo" id="tipo_equipo" required>
+                        <option value="pc_escritorio">PC de Escritorio</option>
+                        <option value="nootbook">Notebook</option>
+                        <option value="all-in-one">All in One</option>
+                        <option value="impresora">Impresora</option>
+                        <option value="otro">Otro</option>
+                    </select><br><br>
+                    <label for="marca">Marca / Modelo</label>
+                    <input type="text" id="marca" name="marca"><br><br>
+
+                    <label for="sistema_operativo">Sistema Operativo:</label>
+                    <select name="sistema_operativo" id="sistema_operativo">
+                        <option value="windows">Windows</option>
+                        <option value="macos">MacOS</option>
+                        <option value="linux">GNU/Linux</option>
+                        <option value="no_se">No Sé</option>
+                    </select><br><br><br>
+
+                    <legend>Detalle del Problema</legend>
+                    <label for="tipo_servicio">Tipo de servicio solicitado:</label><br>
+
+                    <input type="radio" id="reparacion" name="tipo_servicio" value="reparacion">
+                    <label for="reparacion">Reparación</label><br>
+
+                    <input type="radio" id="mantenimiento" name="tipo_servicio" value="mantenimiento">
+                    <label for="">Mantenimiento</label><br>
+                    
+                    <input type="radio" id="formateo" name="tipo_servicio" value="formateo">
+                    <label for="formateo">Formateo / Intalación de Sistema</label><br>
+                
+                    <input type="radio" id="virus" name="tipo_servicio" value="virus">      
+                    <label for="virus">Eliminación de Virus</label><br>
+
+                    <input type="radio" id="otro" name="tipo_servicio" value="otro">      
+                    <label for="otro">Otro</label><br><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar Formulario">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <p><strong>BFtech&reg;</strong></p>
+
+            <p>Dirección: Av. siempre Viva 123, JCP, Bs As</p>
+            <p>Redes: 
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Facebook</a>
+            </p>
+            <p><small>&copy;Todos los derechos reservados.</small></p>
+        </footer>
     </body>
 </html>
