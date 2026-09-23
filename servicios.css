@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+    scroll-behavior: smooth;
+}
+
+.interfaz-contenedor {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Menú Lateral fijo a la izquierda */
+.menu-lateral {
+    width: 260px;
+    background-color: rgb(45, 40, 40); 
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+    height: 100vh;
+}
+
+.logo-menu {
+    font-size: 26px;
+    color: #ffffff; 
+    margin-bottom: 40px; 
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.opciones-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.item-menu {
+    color: rgb(200, 220, 240); 
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+.item-menu:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+
+.item-menu.activo {
+    background-color: rgb(19, 121, 116);
+    color: white;
+}
+
+/* Contenido Principal (Derecha) */
+.contenido-principal {
+    flex: 1;
+    margin-left: 260px; /* Desplaza el contenido para que no lo tape el menú fijo */
+    background-color: rgb(94, 109, 108);
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Tarjetas de servicios */
+.seccion-servicio {
+    background-color: #e6fffa; /* Un tono aguamarina muy claro para que el texto negro contraste perfecto */
+    padding: 35px;
+    border-radius: 10px;
+    border-left: 6px solid rgb(45, 40, 40);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-servicio h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1a3038;
+}
+
+.seccion-servicio p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #334e57;
+}
+
+.imagen-servicio {
+    display: block;      /* Hace que la imagen actúe como un bloque independiente */
+    max-width: 250px;    /* Controla el ancho máximo (cámbialo a tu gusto, ej: 120px o 200px) */
+    height: auto;        /* Mantiene la proporción para que no se deforme */
+    margin-top: 15px;    /* Separa la imagen del texto de arriba */
+    border-radius: 6px;  /* Le da bordes redondeados para que combine con tus tarjetas */
+}
